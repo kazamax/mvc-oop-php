@@ -9,10 +9,6 @@ $url = explode('/', $url);
 $controller = '';
 $method = '';
 $params = '';
-<<<<<<< HEAD
-=======
-$
->>>>>>> parent of 17c83ec... Revert "Agrego modulos ."
 
 if ($url[0] != '') {
 	$controller = ucfirst($url[0]).'Controller';
