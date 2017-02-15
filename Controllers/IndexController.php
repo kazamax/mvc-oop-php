@@ -13,10 +13,11 @@ class IndexController extends MainControllers {
 	}
 
 	public function index(){
-
-		$this->data = $this->model->getData();
-		$data= $this->data;
-		
-		$this->view->render($this, 'index', $data);
+		/* recorto la palabra Controller de todos los controllers para que los modelos sean encontrados mas facil */
+		$controller = substr(get_class($this), 0,5);
+		/*Le pasamos el titulo de la pagina dinamicamente*/
+		$title = 'Pagina de inicio - MVC';
+		$this->view->render($controller, 'index',$title);
 	}
+
 }

@@ -34,14 +34,14 @@ $pathControllers = PATH_C.$controller.'.php';
 
 if (file_exists($pathControllers)) {
 	require $pathControllers;
-	echo 'controller encontrado : '.$controller;
+	// echo 'controller encontrado : '.$controller;
 	$controller = new $controller();
 	if (method_exists($controller, $method)) {
 		if (isset($params) and $params != '') {
-			echo '<br>metodo cargado con params';
+			// echo '<br>metodo cargado con params';
 			$controller->{$method}($params);
 		}else{
-			echo '<br>metodo cargado sin params';
+			// echo '<br>metodo cargado sin params';
 			$controller->{$method}();
 		}
 	}

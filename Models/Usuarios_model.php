@@ -3,12 +3,11 @@
 /**
 * 
 */
-class Index_model
+class Usuarios_model
 {
+	
 	function __construct()
 	{
 		
 	}
-
-
 }

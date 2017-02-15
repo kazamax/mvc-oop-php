@@ -12,9 +12,9 @@ class Views
 		
 	}
 
-	public function render($controller, $view, $data){
+	public function render($controller, $view, $title){
 
-		$controller = substr(get_class($controller), 0, 5);
+		
 
 		require PATH_V.'Default/head.php';
 
